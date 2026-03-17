@@ -1,0 +1,2 @@
+-- Apply your own row-level security policies here if you want to expose selected tables via Supabase client access.
+-- The current project expects server-side writes through secure route handlers.

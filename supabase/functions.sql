@@ -1,0 +1,4 @@
+-- Add future SQL functions or views here, for example:
+-- daily analytics rollups
+-- revenue summaries
+-- availability helpers
