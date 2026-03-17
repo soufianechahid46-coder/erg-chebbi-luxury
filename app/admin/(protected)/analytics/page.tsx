@@ -7,7 +7,9 @@ export default async function AdminAnalyticsPage() {
   ]);
 
   const safeSessions = Array.isArray(sessions) ? sessions : [];
-  const safeEvents = Array.isArray(events) ? (events as any[]) : [];
+  const safeEvents = Array.isArray(events)
+    ? (events as Array<{ event_name: string; path?: string | null }>)
+    : [];
 
   const pageviews = safeEvents.filter(
     (item) => item.event_name === 'pageview'
